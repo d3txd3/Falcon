@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Launchpad</title>
+    <link rel="stylesheet" href="settings.css">
+</head>
+<body>
+    <div id='MyModal' class='modal'>
+         <div class='modal-content'>
+             <input id='modalinput' class='modal-input' maxlength='30'></input>
+             <button class='modal-button' onclick="clickS()">Изменить</button>
+         </div>   
+    </div>
+    <div class='app'>
+        <p class='application_p'>Управление списком</p>
+        <div id='applications' class='applications'>
+        </div>
+        <hr class='line'></hr>  
+        <div class='footer'>
+            <button class='settings' onclick=" window.location.href = 'index.html'"></button>
+        </div>      
+    </div>
+</body>
+    <script src="render.js"></script>
+    <script src='settings.js'></script>
+</html>

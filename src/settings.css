@@ -1,0 +1,208 @@
+.body {
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+body::-webkit-scrollbar {
+	display: none;
+}
+
+
+.app {
+	position: relative;
+	width: 100%;
+	height: 600px;
+	/* 522 */
+	overflow-x: hidden;
+	overflow-y: hidden;
+	border-radius: 10px;
+	background: #ededed;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+.app::-webkit-scrollbar {
+	display: none;
+}
+
+.line {
+	position: relative;
+	top: 576px;
+	border: 2px solid #dcdde3;
+	margin: 0px;
+	padding: 0px;
+}
+
+.footer {
+	position: absolute;
+	background: transparent;
+	width: 100%;
+	height: 20px;
+	top: 580px;
+}
+
+.settings {
+	margin-top: 2px;
+	margin-left: 569px;
+	width: 12px;
+	height: 12px;
+	background: url('./img/levels.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	border: 0px;
+	opacity: 1;
+	outline: none;
+}
+
+.settings:hover {
+	opacity: 0.5;
+	transition: 0.3s;
+}
+
+.settings:active {
+	width: 13px;
+	height: 13px;
+	transition: 0.3s;
+}
+
+
+.applications{
+	position: absolute;
+	margin-top: 120px;
+	width: 100%;
+	height: 400px;
+	background: transparent;
+	overflow: auto;
+}
+.applications::-webkit-scrollbar {
+	display: none;
+}
+.application_p{
+	position: absolute;
+	bottom: 50px;
+	width: 100%;
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 17px;
+	font-weight: 600;
+	margin: 0px;
+	padding: 0px;
+	bottom: 500px;
+}
+.list_app{
+	position: relative;
+	margin: 0px;
+	padding: 0px;
+    background: #dcdde3;
+    width: 100%;
+	height: 30px;
+	margin-top: -15px;
+}
+.list_app_img{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+	background: url('./img/cc.png');
+	margin-top: 2px;
+	margin-left: 2px;
+    background-size: cover;
+    background-repeat: no-repeat;
+	background-position: center center;   
+	border-radius: 5px;    
+}
+.list_app_p{
+	position: relative;
+	font-size: 15px;
+	top: 6px;
+	left: 32px;
+	font-family: sans-serif;
+	font-weight: normal;
+	outline: none;
+	width: 150px;
+}
+
+
+.list_app_exit{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+	background: url('./img/remove.png');
+	margin-left: 560px;
+	margin-top: -25px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;      	
+}
+.list_app_editicon{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+	background: url('./img/edit.png');
+	margin-left: 540px;
+	margin-top: -25px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;      	
+}
+.list_app_exe{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+	background: url('./img/exe.png');
+	margin-left: 520px;
+	margin-top: -25px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;      	
+}
+
+.list_app_name{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+	background: url('./img/edit2.png');
+	margin-left: 500px;
+	margin-top: -25px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;      	
+}
+
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	z-index: 2;
+}
+.modal-content {
+	background-color: #fefefe;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%;
+	height: 100px;
+	z-index: 2;
+  }  
+.modal-input{
+	margin: 40px;
+	margin-top: 30px;
+	margin-left: 120px;
+	width: 50%;
+	z-index: 2;
+}  
+.modal-button{
+	position: relative;
+	margin: 40px;
+	margin-left: 210px;
+	top: -60px;
+	z-index: 2;
+}

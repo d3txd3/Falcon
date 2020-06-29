@@ -1,0 +1,46 @@
+{
+  "name": "FalconStartup",
+  "version": "2.3.0",
+  "description": "alternative startup menu for windows 10",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/d3txd3/falcon.git"
+  },
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "author": "Murad Rahmanov",
+  "license": "ISC",
+  "dependencies": {
+    "electron-updater": "^4.3.1",
+    "jquery": "^3.5.1",
+    "muuri": "^0.9.0",
+    "web-animations-js": "^2.3.2"
+  },
+  "devDependencies": {
+    "electron": "^9.0.4",
+    "electron-builder": "^22.7.0",
+    "webpack": "^4.43.0"
+  },
+  "build": {
+    "appId": "d3txd3.Falcon",
+    "productName": "FalconStartup",
+    "target": "NSIS",
+    "icon": "src/img/rocket.ico",
+    "publish": {
+      "provider": "github",
+      "owner": "d3txd3",
+      "repo": "falcon",
+      "releaseType": "release"
+    },
+    "nsis": {
+      "allowToChangeInstallationDirectory": true,
+      "oneClick": false,
+      "perMachine": true,
+      "uninstallDisplayName": "Falcon Startup",
+      "installerSidebar": "src/img/sidebar.bmp"
+    }
+  }
+}

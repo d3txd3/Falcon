@@ -1,0 +1,10 @@
+node_modules
+dist
+electron-builder.yml
+website
+/coverage
+/website
+*.log
+*.env
+*.DS_Store
+.git

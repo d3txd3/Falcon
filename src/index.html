@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Falcon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id='MyModal' class='modal'>
+        <div class='modal-content'>
+            <input id='modalinput' class='modal-input' maxlength='30'> <p class="dick" >Название</p></input>
+            <input id='modalinput2' class='modal-input'><button class='select' onclick='selectIcon();'>Выбрать</button><p class="dick">Иконка</p></input>
+            <input id='modalinput3' class='modal-input'><button class='select' onclick='selectExec();'>Выбрать</button><p class="dick"> Запускаемый файл</p></input>
+
+            <button class='modal-button' onclick="constructApp()">Добавить</button>
+        </div>   
+   </div>
+
+    <div class='app'>
+        <div class='control'>
+            <center><input id='search_input' class='search-field' spellcheck="false" placeholder="Введите для поиска приложения"></input><center>
+            <div class='search_icon'></div>
+            <div class='footer'>
+                <p id='update' class='update'>У вас последняя версия приложения Falcon.</p>
+                <button class='addA' onclick="displayModal();"></button>
+                <button class='settings' onclick="window.location.href = 'settings.html';"></button>
+            </div>     
+            <hr class='line'></hr>  
+            <hr class='line2'></hr>           
+        </div>
+        <div id='grid' class='grid'>
+        </div>
+    </div>
+</body>
+    <script src="render.js"></script>
+    <script src="script.js"></script>
+</html>
